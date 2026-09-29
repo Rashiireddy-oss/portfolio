@@ -115,4 +115,19 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast(`Designated placeholder: ${placeholderName}. Ready for your link!`);
     });
   });
+
+  // 5. Clickable Project Cards (e.g., LeetCode Solutions card)
+  const clickableCards = document.querySelectorAll('.clickable-card');
+  clickableCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+      // Avoid double triggers if an internal link was already clicked
+      if (e.target.closest('a') || e.target.closest('button')) {
+        return;
+      }
+      const url = card.getAttribute('data-url');
+      if (url) {
+        window.open(url, '_blank', 'noopener,noreferrer');
+      }
+    });
+  });
 });

@@ -757,6 +757,171 @@ body {
   transform: translateX(4px);
 }
 
+/* Active Clickable Card & Links */
+.clickable-card {
+  cursor: pointer;
+}
+
+.clickable-card:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: var(--shadow-md), 0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.card-title-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color var(--transition-fast);
+}
+
+.card-title-link:hover {
+  color: var(--accent-cyan);
+}
+
+.active-repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  word-break: break-all;
+}
+
+.active-repo-link:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateX(4px);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+.active-badge {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: var(--accent-emerald) !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.active-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 8px var(--accent-emerald);
+  animation: pulse-dot 1.8s infinite;
+}
+
+/* Other Public Repositories Section */
+.other-repos-section {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-glass);
+}
+
+.other-repos-header {
+  margin-bottom: 24px;
+}
+
+.other-repos-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.other-repos-sub {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.other-repos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.repo-mini-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 22px;
+  border-radius: var(--radius-md);
+  background: rgba(17, 26, 46, 0.55);
+  border: 1px solid var(--border-glass);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-smooth);
+}
+
+.repo-mini-card:hover {
+  background: rgba(23, 36, 64, 0.85);
+  border-color: var(--accent-cyan);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.mini-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--accent-cyan);
+  margin-bottom: 12px;
+}
+
+.mini-repo-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: rgba(16, 185, 129, 0.12);
+  color: var(--accent-emerald);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.mini-card-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  font-family: var(--font-mono);
+}
+
+.mini-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.mini-card-link {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  transition: transform var(--transition-fast);
+}
+
+.repo-mini-card:hover .mini-card-link {
+  transform: translateX(4px);
+  display: inline-block;
+}
+
+.nav-github-btn {
+  margin-right: 10px;
+}
+
 /* ==================== SKILLS SECTION ==================== */
 .skills-grid {
   display: grid;
@@ -1144,6 +1309,10 @@ body {
   }
 
   .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .other-repos-grid {
     grid-template-columns: 1fr;
   }
 

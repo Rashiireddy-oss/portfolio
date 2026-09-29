@@ -38,9 +38,15 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <!-- Contact CTA Button -->
+      <!-- Contact CTA & GitHub Buttons -->
       <div class="nav-cta">
-        <a href="#contact" class="btn btn-sm btn-outline">Get In Touch</a>
+        <a href="https://github.com/rashiireddy-oss" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline nav-github-btn" aria-label="GitHub Profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#contact" class="btn btn-sm btn-primary">Get In Touch</a>
       </div>
 
       <!-- Mobile Menu Toggle Button -->
@@ -62,6 +68,12 @@
         <li><a href="#contact" class="mobile-link">Contact</a></li>
       </ul>
       <div class="mobile-cta">
+        <a href="https://github.com/rashiireddy-oss" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block" style="margin-bottom: 12px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          <span>GitHub Profile</span>
+        </a>
         <a href="mailto:ireddyrashi@gmail.com" class="btn btn-primary btn-block">Email Me</a>
       </div>
     </div>
@@ -102,6 +114,12 @@
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
+          </a>
+          <a href="https://github.com/rashiireddy-oss" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span>GitHub Profile</span>
           </a>
         </div>
 
@@ -318,8 +336,8 @@
             </div>
           </article>
 
-          <!-- Activity 4 -->
-          <article class="activity-card glass-card reveal">
+          <!-- Activity 4 (Clickable Project Card with Real LeetCode Solutions Repo) -->
+          <article class="activity-card glass-card reveal clickable-card" data-url="https://github.com/rashiireddy-oss/leetcode-solutions">
             <div class="card-header">
               <div class="card-icon-box">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -328,24 +346,107 @@
                   <line x1="12" y1="2" x2="12" y2="22"></line>
                 </svg>
               </div>
-              <span class="card-badge">Activity 4</span>
+              <span class="card-badge active-badge">
+                <span class="active-dot"></span>
+                Public Repo
+              </span>
             </div>
             <div class="card-body">
-              <h3 class="card-title">LeetCode Solutions Repository</h3>
+              <h3 class="card-title">
+                <a href="https://github.com/rashiireddy-oss/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="card-title-link">
+                  LeetCode Solutions Repository
+                  <svg class="external-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </h3>
               <p class="card-description">
                 A repository documenting my LeetCode practice and problem-solving progress.
               </p>
             </div>
             <div class="card-footer">
               <div class="link-label">GitHub:</div>
-              <a href="#" class="placeholder-link" data-placeholder="[ADD LEETCODE REPOSITORY LINK]">
+              <a href="https://github.com/rashiireddy-oss/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="active-repo-link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
-                <span>[ADD LEETCODE REPOSITORY LINK]</span>
+                <span>https://github.com/rashiireddy-oss/leetcode-solutions</span>
+                <svg class="external-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
               </a>
             </div>
           </article>
+        </div>
+
+        <!-- Additional Public Repositories Showcase -->
+        <div class="other-repos-section reveal">
+          <div class="other-repos-header">
+            <h3 class="other-repos-title">Other Public Repositories</h3>
+            <p class="other-repos-sub">Explore additional repositories hosted on my GitHub profile:</p>
+          </div>
+          <div class="other-repos-grid">
+            <!-- PB-Assignment -->
+            <a href="https://github.com/rashiireddy-oss/PB-Assignment" target="_blank" rel="noopener noreferrer" class="repo-mini-card">
+              <div class="mini-card-top">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span class="mini-repo-badge">Public</span>
+              </div>
+              <h4 class="mini-card-name">PB-Assignment</h4>
+              <p class="mini-card-desc">Coursework repository for academic programming assignments.</p>
+              <span class="mini-card-link">View on GitHub &rarr;</span>
+            </a>
+
+            <!-- 2d_graphics_project -->
+            <a href="https://github.com/rashiireddy-oss/2d_graphics_project" target="_blank" rel="noopener noreferrer" class="repo-mini-card">
+              <div class="mini-card-top">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <span class="mini-repo-badge">Public</span>
+              </div>
+              <h4 class="mini-card-name">2d_graphics_project</h4>
+              <p class="mini-card-desc">Computer graphics coursework exploring 2D rendering techniques.</p>
+              <span class="mini-card-link">View on GitHub &rarr;</span>
+            </a>
+
+            <!-- HackerRank-3rdSem-Portfolio -->
+            <a href="https://github.com/rashiireddy-oss/HackerRank-3rdSem-Portfolio" target="_blank" rel="noopener noreferrer" class="repo-mini-card">
+              <div class="mini-card-top">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span class="mini-repo-badge">Public</span>
+              </div>
+              <h4 class="mini-card-name">HackerRank-3rdSem-Portfolio</h4>
+              <p class="mini-card-desc">HackerRank coding challenges and solutions portfolio for 3rd semester.</p>
+              <span class="mini-card-link">View on GitHub &rarr;</span>
+            </a>
+
+            <!-- ACP-Mini-Project -->
+            <a href="https://github.com/rashiireddy-oss/ACP-Mini-Project" target="_blank" rel="noopener noreferrer" class="repo-mini-card">
+              <div class="mini-card-top">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span class="mini-repo-badge">Public</span>
+              </div>
+              <h4 class="mini-card-name">ACP-Mini-Project</h4>
+              <p class="mini-card-desc">Advanced Course Programming collaborative mini project.</p>
+              <span class="mini-card-link">View on GitHub &rarr;</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -563,12 +664,12 @@
                 <span>Email Me</span>
               </a>
 
-              <!-- GitHub Profile Button with Placeholder -->
-              <a href="#" class="btn btn-secondary btn-contact placeholder-link" data-placeholder="[ADD GITHUB PROFILE LINK]">
+              <!-- Clickable GitHub Button with Real Profile Link -->
+              <a href="https://github.com/rashiireddy-oss" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-contact github-btn">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
-                <span>GitHub: [ADD GITHUB PROFILE LINK]</span>
+                <span>GitHub Profile</span>
               </a>
             </div>
           </div>
@@ -597,6 +698,7 @@
         <a href="#skills">Skills</a>
         <a href="#goal">Learning Goal</a>
         <a href="#contact">Contact</a>
+        <a href="https://github.com/rashiireddy-oss" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
 
       <div class="footer-right">
