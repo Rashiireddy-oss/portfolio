@@ -21,7 +21,7 @@ The portfolio is publicly deployed via GitHub Pages:
 - **Home / Hero:** Introduction, current academic standing, quick call-to-actions, direct link to GitHub profile.
 - **About Me:** Concise professional summary highlighting computer science coursework and practical skills development.
 - **Activities & Projects:**
-  - Activity 1 — [Hello World Repository](https://github.com/rashiireddy-oss) (Foundational Git & GitHub activity)
+  - Activity 1 — [Hello World Repository](https://github.com/rashiireddy-oss/hello-world) (Foundational Git & GitHub activity)
   - Activity 2 — Git & GitHub Setup (Practical development & workflow setup)
   - Activity 3 — Pair Programming & Collaboration (GitLens & Live Share workflow)
   - Activity 4 — [LeetCode Solutions Repository](https://github.com/rashiireddy-oss/leetcode-solutions) (Clickable card & live public link)
